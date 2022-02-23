@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULAR</title>
+
+</head>
+
+<body>
+
+    <body style="background-color:rgb(17, 91, 102);">
+
+        <h2 style="background-color:rgb(201, 228, 231);">REGISTRATION FORM </h2>
+
+       
+        <form >
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" maxlength="50" mandatory value="Aline"><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" maxlength="50" mandatory value="Filliol"><br><br>
+
+            <label for="company">Company:</label><br>
+            <input type="text" id="company" name="company" value="Carrousel AG" readonly><br>
+
+            <label for="Email">Email:</label><br>
+            <input type="text" id="Email" name="Email" value="aline.F@gmail.com"><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="quantity" name="quantity" value="50"><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <h2>Password field</h2>
+
+        <form action="/action_page.php">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+    <script>
+        sessionStorage.setItem("lastname", "Smith");
+        let personName = sessionStorage.getItem("lastname");
+        document.getElementById("demo").innerHTML = personName;
+    </script>
+
+</html>
